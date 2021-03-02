@@ -1,0 +1,61 @@
+<!--exercício de hoje:
+Caro aluno,
+→ Crie um documento html onde  tenha uma saída de uma mensagem e mostre  
+um getElementById→ numa situação qualquer.-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+<link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-grid.css" rel="stylesheet">
+<script src="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\js\bootstrap.js"></script>
+<script>
+    function sim() {
+        alert('Feitoo bora lá gurizadaa!!');
+    }
+
+    function nao() {
+        alert('Po meu vai ficar de fora da festa?? aaaa');
+    }
+</script>
+
+<title>Atividade 1 aula 20</title>
+</head>
+
+<body>
+    <section class="container">
+        <h2>Eae bora ir para a praia??</h2>
+        <hr>
+        <div name="sim">
+            <input type="submit" onclick="sim()" value="Sim bora lá!" class="btn btn-primary">
+        </div>
+        <div name="sim">
+            <br>
+            <input type="submit" onclick="nao()" value=" bah meu não rola.." class="btn btn-warning"></br>
+        </div>
+        <hr>
+
+
+
+        <div name="text">
+            <p id="pergunta">Mas pera quem vai ir..?</p>
+            <input type="submit" onclick="funcaoPergunta()" value="bom.." class="btn btn-warning">
+            <script>
+                function funcaoPergunta() {
+                    document.getElementById("pergunta").innerHTML = "Geral manoo, todos da turma!";
+                }
+            </script>
+
+            <hr>
+            <script>
+                document.write('Bahh.. to me indo então!!');
+            </script>
+        </div>
+
+
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

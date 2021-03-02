@@ -1,0 +1,59 @@
+body {
+    background-image: url(https://cdn02.nintendo-europe.com/media/images/08_content_images/games_6/nintendo_switch_7/nswitch_overwatch/crystal_candy_bg_top.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+}
+
+.ajustavel {
+    width: 29.5%;
+}
+
+.imagem {
+    width: 100%;
+    width: 65%;
+    padding: 2%
+}
+
+.carousel-inner {
+    width: 60%;
+    padding: 2%
+}
+
+h2 {
+    font-size: 40px;
+    font-family: unset;
+    color: #f01789;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    font-family: unset;
+    color: black;
+}
+
+.texto {
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: 1px solid #f01789;
+    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.a {
+    color: black;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}

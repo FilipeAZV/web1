@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js</title>
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Trabalhos QI\JS\Exemplos\fundo.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="container">
+        <header style="background-color:#000;color:#fff; padding:2%;">
+            <h1>Js e Trocar cor de fundo</h1>
+        </header>
+        <hr>
+        <hr>
+        <h2>Trocar a Cor de fundo pelo botão</h2>
+        <input type="submit" class="btn" onclick="trocarFundo()" value="Trocar Cor do Fundo">
+
+        <script>
+            function rand(number) {
+                return Math.floor(Math.random() * number);
+            }
+
+            function trocarFundo() {
+                const corRand = 'rgb(' + rand(255) + ',' + rand(255) + ',' + rand(255) + ')';
+                document.body.style.backgroundColor = corRand;
+            }
+        </script>
+    </section>
+</body>
+
+</html>

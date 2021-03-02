@@ -1,0 +1,32 @@
+section {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: #8689a2;
+    color: #FFFFFF;
+}
+
+aside {
+    background: #efefea;
+    width: 25%;
+    height: 300px;
+}
+
+Article {
+    width: 75%;
+    height: 300px;
+    background-color: #ffffff;
+    color: #8689a2;
+    float: right;
+    clear: right;
+}
+
+footer {
+    background-color: #8689a2;
+    color: #FFFFFF;
+    height: 40px;
+}

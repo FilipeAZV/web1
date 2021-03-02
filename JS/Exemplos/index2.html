@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js</title>
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-grid.css" rel="stylesheet">
+    <!--Declaração interna do css no doc html-->
+    <style type="text/css">
+        .formato {
+            background-color: #FDF5E6;
+            border-radius: 2px;
+            border: #ccc solid 1px;
+            font-size: 16px;
+            display: block;
+            width: 40%;
+            padding: 1%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section class="container">
+        <h1>Exemplo de Objeto com operador New</h1>
+        <hr>
+        <h2>Exibição de dados de um Objeto</h2>
+        <p>Exibir aqui:</p>
+        <div id="objetos" class="formato"></div>
+        <hr>
+        <input type="submit" class="btn btn-danger" value="Exibir os dados do Cliente" onclick="objetoPessoa()">
+
+        <script>
+            function objetoPessoa() {
+                var pessoa = new Object(); //criando o objeto com o oper new
+                pessoa.nome = "Marcelino"; //atribuindo os atributos e valores
+                pessoa.sobrenome = "Martins de Lima";
+                pessoa.idade = 25;
+                pessoa.corOlhos = "verde";
+                pessoa.endereco = "Rua Vermelha, nº400";
+                pessoa.complemento = "303";
+                pessoa.cidade = "Porto Alegre";
+
+                document.getElementById("objetos").innerHTML = "Nome: " + pessoa.nome + "<br>Sobrenome: " + pessoa.sobrenome + "<br>Idade: " + pessoa.idade + "<br>Cor dos olhos: " + pessoa.corOlhos + "<br>Endereço: " + pessoa.endereco + "<br>Complemento: " + pessoa.complemento + "<br>Cidade: " + pessoa.cidade;
+            }
+        </script>

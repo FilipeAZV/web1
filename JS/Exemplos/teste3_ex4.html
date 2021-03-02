@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery II</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+    <section class="container">
+        <h1>Trabalhando com jQuery</h1>
+        <h2>Forms</h2>
+        <label id="valor">5</label>
+        <input id="escolheNumero" type="range" min="0" max="10" onchange="MostraNumero()">
+
+        <script>
+            //Função com JQuery
+            function MostraNumero() {
+                var valorSelecionado = $('#escolheNumero').val();
+                $('#valor').html(valorSelecionado);
+            }
+        </script>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+    body {
+        background-color: #87cefa;
+    }
+    
+    h1 {
+        font-weight: bold;
+        color: red;
+    }
+    
+    h2 {
+        font-weight: italic;
+        color: green;
+    }
+    
+    h3 {
+        color: #066098;
+    }
+    
+    h4 {
+        color: orange;
+    }
+    
+    h5 {
+        color: pink;
+    }
+    
+    h6 {
+        color: #704170;
+    }

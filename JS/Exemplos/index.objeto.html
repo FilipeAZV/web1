@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js Objetos</title>
+
+</head>
+
+<body>
+    <section style="width:80%">
+        <h1>Objetos Js</h1>
+
+        <p id="pessoas"></p>
+
+        <script>
+            //criando o objeto
+            var pessoa = {
+                nome: "Ana",
+                sobrenome: "Souza",
+                codigo: 0123,
+                idade: 25,
+
+                //criando função no objeto dentro de um método construído;
+                nomeCompleto: function() {
+                    return this.nome + " " + this.sobrenome + " possui " + this.idade + " e seu código é: " + this.codigo;
+                }
+            };
+
+            //Exibir os dados na página HTML		
+            document.getElementById("pessoas").innerHTML = pessoa.nomeCompleto();
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js</title>
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-grid.css" rel="stylesheet">
+    <style type="text/css">
+        .formato {
+            background-color: #FDF5E6;
+            border-radius: 2px;
+            border: #ccc solid 1px;
+            font-size: 16px;
+            display: block;
+            width: 40%;
+            padding: 1%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <h1>JavaScript Strings</h1>
+            <hr>
+
+            <p>As strings são escritas entre aspas. Você pode usar aspas simples ou duplas:</p>
+            <hr>
+
+            <h2>Exemplo 1</h2>
+            <p id="texto"></p>
+
+            <script>
+                var corName1 = "Vermelho";
+                var corName2 = 'Verde';
+                document.getElementById("texto").innerHTML = corName1 + " " + corName2;
+            </script>
+        </div>
+        <div>
+            <hr>
+            <h2>Exemplo 2</h2>
+
+            <p id="demo"></p>
+
+            <script>
+                document.getElementById("demo").innerHTML =
+                    "Hello Dolly!";
+            </script>
+        </div>
+
+        <div>
+            <hr>
+            <h2>Exemplo 3</h2>
+            <p id="exemplos"></p>
+
+            <script>
+                var x = "String"; // x é um string
+                var y = new String("Objeto"); // y é um objeto
+
+                document.getElementById("exemplos").innerHTML = x + "<br>" + y;
+            </script>
+
+
+        </div>
+        <hr>
+        <div>
+
+            <h2>Exemplo 4</h2>
+            <hr>
+            <h3>Dados para exibição do Cliente</h3>
+            <hr>
+            <p>Exibir aqui:</p>
+            <div id="objetos" class="formato"></div>
+            <br>
+
+            <input type="submit" class="btn btn-danger" onclick="objetoPessoa()" value="Exibir os dados do Cliente">
+
+            <script>
+                function objetoPessoa() {
+                    var pessoa = new Object();
+                    pessoa.nome = "Ana Maria";
+                    pessoa.sobrenome = "Lima e Silva ";
+                    pessoa.idade = 50;
+                    pessoa.corOlhos = "verde";
+                    pessoa.endereco = "Rua Sol nº 128 ";
+                    pessoa.complemento = "12 "
+                    pessoa.cidade = "Porto Alegre";
+
+                    document.getElementById("objetos").innerHTML = "Nome: " + pessoa.nome + "<br>Sobrenome: " + pessoa.sobrenome + "<br>Idade: " + pessoa.idade + " anos,  " + "<br>Endereço: " + pessoa.endereco + "<br> Complementto: " + pessoa.complemento + "<br>Cidade: " + pessoa.cidade;
+                }
+            </script>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

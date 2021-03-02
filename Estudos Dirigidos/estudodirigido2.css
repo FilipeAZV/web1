@@ -1,0 +1,45 @@
+    body {
+        background-image: url(https://wallpapersflood.com/wp-content/uploads/dva_overwatch_art_2-1920x1080.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    
+    .ajustavel {
+        width: 29.5%;
+    }
+    
+    .imagem {
+        width: 100%;
+        width: 65%;
+        padding: 2% static
+    }
+    
+    .carousel-inner {
+        width: 60%;
+        padding: 2%
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-family: unset;
+        color: #f01789;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 24px;
+        font-family: unset;
+        color: #f01789;
+    }
+    
+    .texto {
+        margin-top: 3%;
+        margin-right: 3%;
+        margin-right: 35%;
+        border-radius: 10px;
+        border: 1px solid #f01789;
+        text-align: center;
+        padding: 2%;
+        font-size: 20px;
+        font-weight: bold;
+    }

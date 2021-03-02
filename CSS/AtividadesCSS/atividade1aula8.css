@@ -1,0 +1,31 @@
+section {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: #a2a185;
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+}
+
+aside {
+    background: #696857;
+    width: 20%;
+    height: 300px;
+    float: right;
+    color: #ffffff;
+}
+
+article {
+    background-color: efefea;
+    height: 300px;
+    background: #efefea
+}
+
+footer {
+    background: #a2a185;
+    height: 50px;
+    color: #ffffff;
+}

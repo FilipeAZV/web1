@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <!--acima temos a declaração externa do Js-->
+    <!--declaração interna do Js-->
+    <script>
+        function mensagem() {
+            alert('Vamos beber chopp hj?');
+        }
+    </script> de Js
+
+    <title>Continução da Introdução da Js</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Combinado o trago pra hj?</h1>
+        <hr>
+        <div name="ex2">
+            <input type="submit" onclick="mensagem()" value="Clique Aqui" class="btn btn-secondary">
+        </div>
+        <hr>
+
+        <div name="ex3_trocartexto">
+            <p id="texto">Vamos ou não?</p>
+            <input type="submit" onclick="minhaFuncao()" value="clique" class="btn btn-warning">
+            <script>
+                function minhaFuncao() {
+                    document.getElementById("texto").innerHTML = "Tá combinado então?";
+                }
+            </script>
+        </div>
+        <hr>
+        <div name="ex4_imprimir">
+            <p>botão para impressão</p>
+            <input type="submit" onclick="window.print()" value="print" class="btn btn-primary">
+        </div>
+        <hr>

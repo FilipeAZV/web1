@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery I</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+    <section class="container">
+        <h1>Olá jQuery</h1>
+
+
+        <p> Esta é uma página usando o jQuery </p>
+        <p> Dá para fazer muitas coisas legais com jQuery</p>
+        <p> Então preste muita atenção!</p>
+        <p> Então preste muita atenção!</p>
+        <p> Então preste muita atenção!</p>
+
+        <input type="submit" onclick="esconderComJQueryI()" class="btn btn-danger" value="Clique Aqui para esconder o texto!">
+        <input type="submit" onclick="exibirComJQueryI()" class="btn btn-warning" value="Clique Aqui para exibir o texto!">
+        <!--no jQuery se trabalha com seletor, qdo tu inserir o $ é indicação de seletor
+			qualquer elemento HTML pode ser um seletor, no caso das funções abaixo, o elemento setado é o p. Tudo que estiver 
+			entre <p> e </p> recebe a ação associada, no caso hide e show-->
+
+        <script>
+            function esconderComJQueryI() {
+                $("p").hide();
+            }
+
+            function exibirComJQueryI() {
+                $("p").show();
+            }
+        </script>
+        <hr>
+
+
+    </section>
+</body>
+
+</html>

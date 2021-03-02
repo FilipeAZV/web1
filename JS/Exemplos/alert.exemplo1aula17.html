@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+
+    <!--Declaração externa do Js-->
+    <script src="js/bootstrap.js"></script>
+    <!--declaração interna do Js-->
+    <!--para fazer o alert use esse script-->
+    <script>
+        function aviso() {
+            alert('Oi, tudo bem?');
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="container">
+        <h1>Introdução ao Js</h1>
+        <hr>
+        <div name="exemplo1">
+            <!--aqui é a continuação do alert-->
+            <!--configuração do evento onclick que a chama a função-->
+            <input type="submit" onclick="aviso()" value="Clique aqui" class="btn btn-primary">
+        </div>
+
+        <hr>
+        <div name="exemplo2">
+            <script>
+                document.write('Oi Valescaaaaa');
+            </script>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+    </section>
+
+</body>

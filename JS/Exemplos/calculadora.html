@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js</title>
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-grid.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Trabalhos QI\JS\Exemplos\formu.css" rel="stylesheet">
+    <script>
+        function abrir() {
+            alert("Hoje vamos trabalhar com a calculadora");
+        }
+    </script>
+
+
+</head>
+
+<body onload="abrir()">
+    <section class="container">
+        <h1>Exemplo de variáveis no Js - Aula 22</h1>
+        <h2>Criando uma Calculadora</h2>
+        <hr>
+        <div>
+            <form name="calcform" method="post">
+
+                <legend>Calculadora Simples</legend>
+
+                <label for="valor1">Digite o valor 1:</label>
+                <input type="text" name="valor1" id="valor1">
+
+                <label for="valor2">Digite o valor 2:</label>
+                <input type="text" name="valor2" id="valor2">
+
+                <label for="operar">Selecione a operação:</label>
+                <select name="oper" id="operar">
+						 <option value="somar">Somar</option>
+						 <option value="subtrair">Subtrair</option>
+						 <option value="multiplicar">Multiplifcar</option>
+						 <option value="dividir">Dividir</option>
+					</select>
+
+                <label for="resposta" style="padding-top:1%;">Resultado:</label>
+                <input type="text" name="res" id="resposta">
+
+                <input type="button" value="Calcular" class="btn btn-danger" onClick="calcular(document.calcform.operar.value)">
+                <input type="reset" value="Limpar" class="btn btn-danger">
+            </form>
+        </div>
+        <script>
+            function calcular(operar) {
+                var valor1 = document.calcform.valor1.value;
+                var valor2 = document.calcform.valor2.value;
+
+                if (operar == "somar") {
+                    var resposta = parseInt(valor1) + parseInt(valor2);
+                } else {
+                    if (operar == "subtrair") {
+                        var resposta = valor1 - valor2;
+                    } else {
+                        if (operar == "multiplicar") {
+                            var resposta = valor1 * valor2;
+                        } else {
+                            var resposta = valor1 / valor2;
+                        }
+                    }
+                }
+
+                document.calcform.resposta.value = resposta;
+            }
+        </script>
+
+
+    </section>
+</body>
+
+</html>

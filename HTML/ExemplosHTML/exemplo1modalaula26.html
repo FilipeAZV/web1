@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Flavors&display=swap" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-grid.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Trabalhos QI\CSS\ExemplosCSS\exemplo1modalaula26.css" rel="stylesheet">
+    <!--Arquivos do Js compilado-->
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $('#exampleModal').on('show.bs.modal', function(event) { //vinculo com o botão do modal
+            var button = $(event.relatedTarget) // Botão que acionou o modal
+            var recipient = button.data('whatever') // Extrai informação de todos os atributos data-* do modal
+                // Atualiza o conteúdo do modal. Nós vamos usar jQuery, aqui. No entanto, você poderia usar uma biblioteca de data binding ou outros métodos.
+            var modal = $(this)
+            modal.find('.modal-title').text('Nova mensagem para ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+        })
+    </script>
+
+    <title>Layout com Modal</title>
+</head>
+
+<body>
+
+    <!--Código do Modal-->
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Diga oi para Elvira</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+
+                <!--corpo do modal-->
+                <div class="modal-body">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/imagem1.jpg" alt="Elvira">
+                        <div class="card-body">
+                            <h5 class="card-title">Elvira a rainha das trevas</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <!--inserindo conteúdo no modal-->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/elvira.jpeg" alt="Elvira">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <!--inserindo formulário no modal-->
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Endereço de email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mensagem</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Digite aqui sua mensagem">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                                    </div>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--fim do código do Modal-->
+
+    <!--começo da estrutura do HTML-->
+    <section class="container">
+        <nav class="navbar navbar-expand-lg barras">
+            <a class="navbar-brand" href="layout_modal.html" style="color:#fff; font-weight:bold;">Elvira</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" style="color:#fff; font-weight:bold;" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                    <a class="nav-link" style="color:#fff; font-weight:bold;" href="filmes.html">Filmes</a>
+                    <a class="nav-link" style="color:#fff; font-weight:bold;" href="#">Fotos</a>
+                    <a class="nav-link disabled" style="color:#fff; font-weight:bold;" href="#">Download</a>
+                </div>
+            </div>
+        </nav>
+
+        <!--abrindo o article-->
+        <article>
+
+            <div class="container">
+                <div class="row border">
+                    <div class="col-md-12 border">
+                        <div class="titulo">Elvira</div>
+                        <span class="subtitulo">A rainha das Trevas</span>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col-md-12 border">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/01/legiao_UCyNLrIWzbfHtqFnY5cDSguMe61BJ9Qw32m0pvTEZ_.png.jpeg" alt="Primeiro Slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://cinemaemcena.com.br/uploads/artigos/635748123212536710.jpg" alt="Segundo Slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://bocadoinferno.com.br/wp-content/uploads/2016/07/Elvira-5.jpg" alt="Terceiro Slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--começo das grids-->
+                <div class="row">
+
+                    <div class="col-md-4 border">
+                        <h2>Título</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                            dui. </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 border">
+                        <h2>Título</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                            dui. </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 border">
+                        <h2>Título</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                            dui. </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 border" style="text-align:center">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+						  Mande uma mensagem para Elvira
+						</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </article>
+
+
+        <!--abrindo o rodapé-->
+        <footer>
+            <br>
+            <br>
+            <br>
+        </footer>
+
+
+
+    </section>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

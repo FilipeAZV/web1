@@ -1,0 +1,29 @@
+<!--Crie um documento html com Js onde crie um  alerta convidando alguém para  sair… 
+e crie um exemplo onde seja escrito algo na saída do html.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Atividade aula 18 </title>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+
+    <div name="ex3_trocartexto">
+        <p id="texto">Vamos ou não?</p>
+        <input type="submit" onclick="minhaFuncao()" value="clique" class="btn btn-warning">
+        <script>
+            function minhaFuncao() {
+                document.getElementById("texto").innerHTML = "Tá combinado então?";
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

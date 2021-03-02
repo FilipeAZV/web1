@@ -1,0 +1,22 @@
+section {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: #4e4e42;
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+}
+
+article {
+    background-color: #efefea;
+    height: 300px;
+}
+
+footer {
+    background: #4e4e42;
+    height: 50px;
+    color: #ffffff;
+}

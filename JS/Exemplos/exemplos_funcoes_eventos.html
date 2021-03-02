@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js</title>
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-grid.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="container">
+            <h1>Funções em Js</h1>
+            <hr>
+            <div>
+                <h2>Exemplo 1</h2>
+                <div> O cálculo da função obteve o resultado de: </div>
+                <p id="calculo" style="font-size:34px; font-weight:bold; color:red;"></p>
+
+                <script>
+                    var x = minhaFuncao(124, 56);
+                    document.getElementById("calculo").innerHTML = x;
+
+                    function minhaFuncao(a, b) {
+                        return a * b;
+                    }
+                </script>
+            </div>
+            <hr>
+            <div style="padding-top:2%; width:50%;">
+                <h2>Exemplo 2</h2>
+                <form name="teste" method="get">
+                    <input type="text" name="nome" id="idNome" class="form-control"><br>
+                    <input type="text" name="nomeDigitado" id="idNomeDigitado" class="form-control">
+                    <br>
+                    <input type="submit" name="botao" id="idBotao" onclick="mensagem();" value="Clique Aqui">
+                    <p><span id="mostraValor"></span></p>
+                </form>
+
+                <script>
+                    function mensagem() {
+                        var valorNome = document.getElementById("idNome").value;
+                        // Exibir mensagem em caixa de alerta:
+                        alert("Bem-vindo, " + valorNome);
+                        // Copiar valor de uma caixa de texto para outra:
+                        document.getElementById("idNomeDigitado").value = document.getElementById("idNome").value;
+                        // Escrever na página (usando conteiner span):
+                        document.getElementById("mostraValor").innerHTML = "Muito bem, " + valorNome + " !";
+                    }
+                </script>
+
+            </div>
+            <hr>
+            <div style="padding-top:2%; width:50%;">
+                <h2>Eventos</h2>
+                <p id="data" style="font-size:34px; font-weight:bold; color:red;"></p>
+                <br><br>
+                <input type="submit" onmouseover="document.getElementById('data').innerHTML = Date()" value="Qual a data e hora atual?" class="btn btn-secondary">
+
+            </div>
+            <hr>
+            <div style="padding:2%; width:50%;">
+                <h2>Eventos 2</h2>
+
+                <input type="submit" class="btn btn-secondary" onclick="trocarFundo()" value="Trocar cor de Fundo">
+
+                <script>
+                    function rande(number) {
+                        return Math.floor(Math.random() * number);
+                    }
+
+                    function trocarFundo() {
+                        const corRand = 'rgb(' + rande(255) + ',' + rande(255) + ',' + rande(255) + ')';
+                        document.body.style.backgroundColor = corRand;
+                    }
+                </script>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

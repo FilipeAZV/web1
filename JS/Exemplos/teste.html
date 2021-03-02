@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo getElementById</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script>
+        function mudarCor(novaCor) {
+            var elemento = document.getElementById("parametro");
+            elemento.style.color = novaCor;
+        }
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <h2>Método getElementById()</h2>
+        <p id="parametro" style="font-size:16px; font-weight:bold;">Algum texto de exemplo</p>
+        <hr>
+        <button onclick="mudarCor('blue');">Azul</button>
+        <button onclick="mudarCor('red');">Vermelho</button>
+        <p>ou</p>
+        <input type="submit" onclick="mudarCor('#00f');" value="Azul" class="btn btn-primary">
+        <input type="submit" onclick="mudarCor('#f00');" value="Vermelho" class="btn btn-danger">
+    </section>
+</body>
+
+</html>

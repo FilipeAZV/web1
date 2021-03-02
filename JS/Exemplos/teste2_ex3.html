@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery II</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap-reboot.css" rel="stylesheet">
+    <link href="D:\Documentos\WORKSPACE - DEV\QI\VSCODE\Pasta do Boot\css\bootstrap.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+    <section class="container">
+        <h1>Trabalhando com jQuery</h1>
+
+        <input type="submit" onclick="mostrarJq()" value="Clique Aqui para mostrar uma DIV oculta!" class="btn btn-success">
+
+        <div id="ConteudoOculto" style="display:none; padding:2%;">
+            <div style="width:80%;">
+                <img src="https://www.spinoff.com.br/wp-content/uploads/Elvira-A-Rainha-das-Trevas-2.jpg" class="card-img" />
+
+            </div>
+        </div>
+
+        <script>
+            function mostrarJq() {
+                $("#ConteudoOculto").fadeIn(3000); //3 segundos
+            }
+        </script>
+
+    </section>
+</body>
+
+</html>

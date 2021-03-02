@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-image: url(https://images.alphacoders.com/988/thumb-1920-988021.jpg);
+}
+
+article {
+    color: #fff;
+    width: 100%;
+}
+
+.texto {
+    margin-top: 16%;
+    margin-left: 29%;
+    border-radius: 10px;
+    border: 1px solid #bf40bf;
+    text-align: center;
+    padding: 2%;
+    width: 40%;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    width: 40%;
+}
+
+.frase {
+    text-align: center;
+    margin-top: 0.1%;
+    margin-left: 0.02%;
+}
